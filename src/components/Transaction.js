@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 
-import { GlobalContext } from '../context/GlobalState'
+import { TransactionState } from '../context/transaction/TransactionState'
 
 const deleteButtonStyle = { marginRight: 10, marginTop: 2 }
 
 const Transaction = ({ transaction }) => {
-  const { deleteTransaction } = useContext(GlobalContext)
+  const { deleteTransaction } = useContext(TransactionState)
 
   const sign = transaction.amount < 0 ? '-' : '+'
 

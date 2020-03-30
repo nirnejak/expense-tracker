@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { GlobalProvider } from './context/GlobalState'
+import { TransactionProvider } from './context/transaction/TransactionState'
 
 import Layout from './components/Layout'
 import Balance from './components/Balance'
@@ -12,14 +12,15 @@ import './App.scss';
 
 const App = () => {
   return (
-    <GlobalProvider>
-      <Layout>
+    <Layout>
+      <TransactionProvider>
         <Balance />
         <IncomeExpenses />
         <TransactionList />
         <AddTransaction />
-      </Layout>
-    </GlobalProvider>
+      </TransactionProvider>
+    </Layout>
+
   );
 }
 

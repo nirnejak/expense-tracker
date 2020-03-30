@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 
-import { GlobalContext } from '../context/GlobalState'
+import { TransactionState } from '../context/transaction/TransactionState'
 
 import Transaction from './Transaction'
 
 const TransactionList = () => {
-  const { transactions } = useContext(GlobalContext)
+  const { transactions } = useContext(TransactionState)
 
   return (
     <section style={{ marginBottom: 50 }}>
