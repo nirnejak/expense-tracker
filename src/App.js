@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { GlobalProvider } from './context/GlobalState'
+
 import Layout from './components/Layout'
 import Balance from './components/Balance'
 import IncomeExpenses from './components/IncomeExpenses'
@@ -10,12 +12,14 @@ import './App.scss';
 
 const App = () => {
   return (
-    <Layout>
-      <Balance />
-      <IncomeExpenses />
-      <TransactionList />
-      <AddTransaction />
-    </Layout>
+    <GlobalProvider>
+      <Layout>
+        <Balance />
+        <IncomeExpenses />
+        <TransactionList />
+        <AddTransaction />
+      </Layout>
+    </GlobalProvider>
   );
 }
 
