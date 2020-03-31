@@ -2,6 +2,15 @@ import React, { useState, useContext } from 'react'
 
 import { TransactionState } from '../context'
 
+/**
+ * Component to add a transaction
+ * 
+ * @component
+ * @example
+ * return (
+ *  <AddTransaction />
+ * )
+ */
 const AddTransaction = () => {
   const { addTransaction } = useContext(TransactionState)
 

@@ -1,9 +1,19 @@
 import React, { useContext } from 'react'
+import PropTypes from 'prop-types'
 
 import { TransactionState } from '../context'
 
 const deleteButtonStyle = { marginRight: 10, marginTop: 2 }
 
+/**
+ * Component to show a transaction
+ * 
+ * @component
+ * @example
+ * return (
+ *  <Transaction />
+ * )
+ */
 const Transaction = ({ transaction }) => {
   const { deleteTransaction } = useContext(TransactionState)
 
@@ -26,6 +36,13 @@ const Transaction = ({ transaction }) => {
       </span>
     </span>
   )
+}
+
+Transaction.propTypes = {
+  /**
+   * An object representing transaction
+   */
+  transaction: PropTypes.object.isRequired
 }
 
 export default Transaction

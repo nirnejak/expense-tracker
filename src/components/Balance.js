@@ -2,6 +2,15 @@ import React, { useContext } from 'react'
 
 import { TransactionState } from '../context'
 
+/**
+ * Component to show Balance amount
+ * 
+ * @component
+ * @example
+ * return (
+ *  <Balance />
+ * )
+ */
 const Balance = () => {
   const { transactions } = useContext(TransactionState)
 

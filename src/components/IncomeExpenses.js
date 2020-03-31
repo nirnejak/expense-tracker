@@ -2,6 +2,15 @@ import React, { useContext } from 'react'
 
 import { TransactionState } from '../context'
 
+/**
+ * Component to show income and expenses
+ * 
+ * @component
+ * @example
+ * return (
+ *  <IncomeExpenses />
+ * )
+ */
 const IncomeExpenses = () => {
   const { transactions } = useContext(TransactionState)
 

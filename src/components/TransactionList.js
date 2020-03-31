@@ -4,6 +4,15 @@ import { TransactionState } from '../context'
 
 import Transaction from './Transaction'
 
+/**
+ * Component to show list of all the transactions
+ * 
+ * @component
+ * @example
+ * return (
+ *  <TransactionList />
+ * )
+ */
 const TransactionList = () => {
   const { transactions } = useContext(TransactionState)
 

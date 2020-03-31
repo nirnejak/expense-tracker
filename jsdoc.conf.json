@@ -1,0 +1,31 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc",
+      "closure"
+    ]
+  },
+  "source": {
+    "include": [
+      "src"
+    ],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [
+    "better-docs/component",
+    "plugins/markdown"
+  ],
+  "templates": {
+    "better-docs": {
+      "name": "Expense Tracker Documentation"
+    }
+  },
+  "opts": {
+    "destination": "docs",
+    "recurse": true,
+    "template": "./node_modules/better-docs",
+    "readme": "README.md"
+  }
+}
