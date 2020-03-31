@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 
-import { TransactionState } from '../context/transaction/TransactionState'
+import { TransactionState } from '../context'
 
 const Balance = () => {
   const { transactions } = useContext(TransactionState)

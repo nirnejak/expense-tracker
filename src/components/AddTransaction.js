@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 
-import { TransactionState } from '../context/transaction/TransactionState'
+import { TransactionState } from '../context'
 
 const AddTransaction = () => {
   const { addTransaction } = useContext(TransactionState)

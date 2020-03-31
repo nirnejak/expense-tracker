@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TransactionProvider } from './context/transaction/TransactionState'
+import { TransactionProvider } from './context'
 
 import Layout from './components/Layout'
 import Balance from './components/Balance'
