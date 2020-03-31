@@ -40,7 +40,7 @@ const Transaction = ({ transaction }) => {
 
 Transaction.propTypes = {
   /**
-   * An object representing transaction
+   * An object representing a transaction
    */
   transaction: PropTypes.object.isRequired
 }
