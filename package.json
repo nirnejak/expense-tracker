@@ -10,7 +10,7 @@
     "better-docs": "^1.4.7",
     "jsdoc": "^3.6.3",
     "node-sass": "^7.0.0",
-    "parcel": "^1.12.4",
+    "parcel": "^2.8.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "5.0.1"
